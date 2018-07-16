@@ -19,6 +19,7 @@ namespace CBA.Store.Api.Controllers
 
         public ProductController(IProductRepository productRepository, IMapper mapper)
         {
+            //
             _productRepository = productRepository;
             _mapper = mapper;
         }
