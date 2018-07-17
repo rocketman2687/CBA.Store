@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using AutoMapper;
 using AutoMapper.Configuration;
-using CBA.Store.Domain;
 using CBA.Store.Api.Models;
+using CBA.Store.Web.Models;
 
-namespace CBA.Store.Api.Mapping
+namespace CBA.Store.Web.Mapping
 {
     public class MapperFactory
     {
@@ -15,8 +15,8 @@ namespace CBA.Store.Api.Mapping
         {
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<Product, ProductModel>();
-                cfg.CreateMap<ProductModel, Product>();
+                cfg.CreateMap<ProductViewModel, ProductModel>();
+                cfg.CreateMap<ProductModel, ProductViewModel>();
             });
             return config.CreateMapper();
         }

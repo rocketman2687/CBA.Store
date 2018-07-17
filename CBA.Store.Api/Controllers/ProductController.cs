@@ -19,21 +19,22 @@ namespace CBA.Store.Api.Controllers
 
         public ProductController(IProductRepository productRepository, IMapper mapper)
         {
-            //
             _productRepository = productRepository;
             _mapper = mapper;
         }
 
-        public ProductApiModel[] Get()
+        [HttpGet]
+        public ProductModel[] Get()
         {
             var products = _productRepository.GetAll();
-            return _mapper.Map<List<ProductApiModel>>(products).ToArray();
+            return _mapper.Map<List<ProductModel>>(products).ToArray();
         }
 
-        public ProductApiModel Get(long id)
+        [HttpGet]
+        public ProductModel Get(long id)
         {
             var product = _productRepository.Get(id);
-            return _mapper.Map<ProductApiModel>(product);
+            return _mapper.Map<ProductModel>(product);
         }
     }
 }
