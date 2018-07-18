@@ -12,18 +12,18 @@ namespace CBA.Store.Web.Tests.Controllers
     [TestClass]
     public class HomeControllerTest
     {
-        private HomeController _controller;
+        private HomeController _homeController;
 
         [TestInitialize]
         public void SetupForTest()
         {
-            _controller = new HomeController();
+            _homeController = new HomeController();
         }
 
         [TestMethod]
         public void Index()
         {
-            ViewResult result = _controller.Index() as ViewResult;
+            ViewResult result = _homeController.Index() as ViewResult;
             Assert.IsNotNull(result);
         }
     }

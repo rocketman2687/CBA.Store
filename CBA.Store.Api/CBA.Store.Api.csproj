@@ -169,6 +169,10 @@
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CBA.Store.Api.Client\CBA.Store.Api.Client.csproj">
+      <Project>{25145270-dc82-4836-aa00-b2bac4ce97bb}</Project>
+      <Name>CBA.Store.Api.Client</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CBA.Store.Api.Models\CBA.Store.Api.Models.csproj">
       <Project>{e33c455e-068f-411f-a545-2c383cb605f9}</Project>
       <Name>CBA.Store.Api.Models</Name>
