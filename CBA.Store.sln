@@ -27,6 +27,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBA.Store.Api.Models", "CBA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBA.Store.Api.Client", "CBA.Store.Api.Client\CBA.Store.Api.Client.csproj", "{25145270-DC82-4836-AA00-B2BAC4CE97BB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{20F07CFA-0768-48E2-A6F2-5F75FC7D7C00}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config-local.js = gulp-config-local.js
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

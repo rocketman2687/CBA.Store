@@ -22,6 +22,7 @@ namespace CBA.Store.Api.Tests.Controllers
         [TestInitialize]
         public void SetupForTest()
         {
+            // best to start with fresh objects for each test to avoid tests impacting each other
             _productRepositoryMock = new Mock<IProductRepository>();
             _productController = new ProductController(_productRepositoryMock.Object, MapperFactory.CreateMapper());
         }
