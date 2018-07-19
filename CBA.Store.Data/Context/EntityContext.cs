@@ -7,6 +7,9 @@ using CBA.Store.Domain;
 
 namespace CBA.Store.Data.Context
 {
+    /// <summary>
+    /// EF code first database context
+    /// </summary>
     public class EntityContext : DbContext
     {
         public EntityContext(string nameOrConnectionString) : base(nameOrConnectionString)

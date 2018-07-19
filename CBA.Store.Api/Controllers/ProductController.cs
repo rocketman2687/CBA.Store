@@ -12,6 +12,9 @@ using CBA.Store.Api.Models;
 
 namespace CBA.Store.Api.Controllers
 {
+    /// <summary>
+    /// The product restful API
+    /// </summary>
     public class ProductController : ApiController
     {
         private IProductRepository _productRepository;

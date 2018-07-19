@@ -8,6 +8,10 @@ using CBA.Store.Api.Client.Exceptions;
 
 namespace CBA.Store.Api.Client
 {
+    /// <summary>
+    /// Base class with basic API client excpetion handling which standardises API calls.
+    /// Could potentially handle security authentication if required.
+    /// </summary>
     public class ClientBase
     {
         protected IRestClient _restClient;

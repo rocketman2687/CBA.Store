@@ -8,6 +8,10 @@ namespace CBA.Store.Web.Controllers
 {
     public class HomeController : Controller
     {
+        /// <summary>
+        /// Controller for home page and other basic pages
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             return View();

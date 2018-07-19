@@ -11,6 +11,9 @@ using CBA.Store.Web.Mapping;
 
 namespace CBA.Store.Web.Controllers
 {
+    /// <summary>
+    /// Controller for product related pages
+    /// </summary>
     public class ProductController : Controller
     {
         private IProductClient _productClient;

@@ -7,6 +7,10 @@ using CBA.Store.Data.Interface;
 
 namespace CBA.Store.Data.Repository
 {
+    /// <summary>
+    /// Base repository that provides CRUD EF operations
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class Repository<T> : IRepository<T>
           where T : class
     {

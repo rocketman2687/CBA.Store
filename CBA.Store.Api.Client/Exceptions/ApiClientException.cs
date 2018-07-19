@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CBA.Store.Api.Client.Exceptions
 {
+    /// <summary>
+    /// Basic exception for throwing network and other API related exceptions
+    /// </summary>
     public class ApiClientException : Exception
     {
         public ApiClientException(string message) : base(message)

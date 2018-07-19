@@ -15,6 +15,10 @@ using CBA.Store.Data.Interface;
 
 namespace CBA.Store.Api
 {
+    /// <summary>
+    /// Configure Autofac dependency injection and configure ASP MVC to use it for 
+    /// creating controllers
+    /// </summary>
     public class AutofacConfig
     {
         public static void Configure()

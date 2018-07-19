@@ -8,6 +8,9 @@ using CBA.Store.Api.Client.Interface;
 
 namespace CBA.Store.Api.Client
 {
+    /// <summary>
+    /// Product API client
+    /// </summary>
     public class ProductClient : ClientBase, IProductClient
     {
         public ProductClient(IRestClient restClient) : base(restClient)
