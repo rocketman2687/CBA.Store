@@ -38,6 +38,7 @@ BUILD PROCESS
 - As per requirements build process was scripted, I used NodeJS, NPM and Gulp. Gulp was used simply because I've
 used it recently but many other options are available. Gulp does provide good support for packaging web UIs.
 - VSTS was used for hosting the automated build.
+- I haven't enabled builds on check in because I have limited free build processing minutes.
 
 DEPLOYMENT
 - VSTS was used for automate deployments.
