@@ -5,6 +5,7 @@ var del = require('del');
 var path = require("path");
 var runSequence = require("run-sequence");
 var nugetRestore = require('gulp-nuget-restore');
+var zip = require('gulp-zip');
 var yargs = require("yargs").argv;
 
 var config = require("./gulp-config.js")();
@@ -18,7 +19,9 @@ gulp.task("default", function (callback) {
       "02-Build-Solution",
       "04-Publish-API",
       "05-Publish-Web",
-      "06-Publish-Database",
+      "06-Package-Api",
+      "07-Package-Web",
+      "08-Publish-Database",
       callback);
 });
 
@@ -107,7 +110,19 @@ gulp.task("05-Publish-Web", function () {
         }));
 });
 
-gulp.task("06-Publish-Database", function () {
+gulp.task("06-Package-Api", function () {
+    gulp.src(config.apiTargetPath + "/**/*")
+        .pipe(zip('apiroot.zip'))
+        .pipe(gulp.dest(config.packageTarget))
+});
+
+gulp.task("07-Package-Web", function () {
+    gulp.src(config.webTargetPath + "/**/*")
+        .pipe(zip('webroot.zip'))
+        .pipe(gulp.dest(config.packageTarget))
+});
+
+gulp.task("08-Publish-Database", function () {
     gulp.src(config.databaseLocation)
         .pipe(gulp.dest(config.databaseTarget));
 });

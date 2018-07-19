@@ -6,6 +6,8 @@
         webProject: "./CBA.Store.Web/CBA.Store.Web.csproj",
         apiTargetPath: outputRootPath + "\\apiroot",
         webTargetPath: outputRootPath + "\\wwwroot",
+        databaseTarget: outputRootPath + "/release/database",
+        packageTarget: outputRootPath + "/release",
         buildConfiguration: "Debug",
         buildToolsVersion: 15.0,
         buildMaxCpuCount: 0,
